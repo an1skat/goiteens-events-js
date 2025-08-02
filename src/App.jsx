@@ -7,7 +7,7 @@ function App() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("/upcoming-events.json")
+    fetch("https://an1skat.github.io/goiteens-events-js/upcoming-events.json")
       .then((res) => res.json())
       .then(setEvents);
   }, []);
